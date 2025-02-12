@@ -49,7 +49,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         </div>
 
         {/* Skills Used */}
-        <div className="bg-[#222222] rounded-lg p-5 mb-12">
+        <div className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Skills Used</h2>
           <Skills filter={project.skills} />
         </div>

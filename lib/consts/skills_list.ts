@@ -1,58 +1,29 @@
-export const allSkills = [
-  {
-    name: 'Flutter',
-    icon: '/assets/skills/flutter.png',
-    color: '#02569B',
-  },
-  {
-    name: 'React',
-    icon: '/assets/skills/react.png',
-    color: '#007ACC',
-  },
-  {
-    name: 'Firebase',
-    icon: '/assets/skills/firebase.PNG',
-    color: '#FFCA28',
-  },
+export const categorizedSkills = {
+  Languages: [
+    { name: 'Dart', icon: '/assets/skills/dart.png' },
+    {
+      name: 'TypeScript',
+      icon: '/assets/skills/typescript.png',
+    },
+    {
+      name: 'JavaScript',
+      icon: '/assets/skills/javascript.png',
+    },
+    { name: 'Java', icon: '/assets/skills/java.png' },
+    { name: 'CSS', icon: '/assets/skills/css.png' },
+  ],
+  Tools: [
+    { name: 'Firebase', icon: '/assets/skills/firebase.PNG' },
+    { name: 'Git', icon: '/assets/skills/git.png' },
+    { name: 'Jira', icon: '/assets/skills/jira.png' },
+    { name: 'Figma', icon: '/assets/skills/figma.png' },
+  ],
 
-  {
-    name: 'SQL',
-    icon: '/assets/skills/mysql.png',
-    color: '#4479A1',
-  },
-  {
-    name: 'Js',
-    icon: '/assets/skills/javascript.png',
-    color: '#F7DC6F',
-  },
-  {
-    name: 'Dart',
-    icon: '/assets/skills/dart.png',
-    color: '#4479A1',
-  },
-  {
-    name: 'Java',
-    icon: '/assets/skills/java.png',
-    color: '#F24E1E',
-  },
-  {
-    name: 'CSS',
-    icon: '/assets/skills/css.png',
-    color: '#F24E1E',
-  },
-  {
-    name: 'Figma',
-    icon: '/assets/skills/figma.png',
-    color: '#8B0000',
-  },
-  {
-    name: 'Git',
-    icon: '/assets/skills/git.png.png',
-    color: '#F24E1E',
-  },
-  {
-    name: 'Jira',
-    icon: '/assets/skills/jira.png',
-    color: '#007ACC',
-  },
-];
+  Frameworks: [
+    { name: 'Flutter', icon: '/assets/skills/flutter.png' },
+    { name: 'React', icon: '/assets/skills/react.png' },
+  ],
+  
+  
+  Databases: [{ name: 'SQL', icon: '/assets/skills/mysql.png' }],
+};
