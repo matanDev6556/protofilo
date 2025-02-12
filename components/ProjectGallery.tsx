@@ -63,7 +63,7 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
   return (
     <div
       ref={containerRef}
-      className="relative w-full max-w-4xl mx-auto h-[600px] sm:h-[800px] md:h-[800px]"
+      className="relative w-full max-w-4xl mx-auto h-[400px] sm:h-[600px] md:h-[600px]"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}

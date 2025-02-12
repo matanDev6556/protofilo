@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import ProjectGrid from './ProjectGrid';
 import Skills from './SkillGrid';
 import Timeline from './Timeline';
+import TextAnimation from './TextAnimation';
 
 export default function Portfolio() {
   return (
@@ -34,7 +35,11 @@ export default function Portfolio() {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-5xl font-bold mb-4">
-                I&apos;m <span className="text-[#FFD700]">Matan Kalifa</span>
+                <TextAnimation text="I'm" delay={0} speed={0.1} />
+                <span className="text-[#FFD700]">
+                  {' '}
+                  <TextAnimation text="Matan Kalifa" delay={0} speed={0.1} />
+                </span>
               </h1>
               <h2 className="text-2xl text-gray-400 mb-6">
                 Full Stack Developer
