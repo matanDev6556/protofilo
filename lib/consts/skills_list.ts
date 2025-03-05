@@ -4,12 +4,13 @@ export const categorizedSkills = {
     { name: 'TypeScript', icon: '/assets/skills/typescript.png' },
     { name: 'JavaScript', icon: '/assets/skills/javascript.png' },
     { name: 'Java', icon: '/assets/skills/java.png' },
-    { name: 'CSS', icon: '/assets/skills/css.png' },
   ],
 
   Frontend: [
     { name: 'Flutter', icon: '/assets/skills/flutter.png' },
     { name: 'React', icon: '/assets/skills/react.png' },
+    { name: 'HTML', icon: '/assets/skills/html.png' },
+    { name: 'CSS', icon: '/assets/skills/css.png' },
   ],
 
   Backend: [
@@ -27,5 +28,6 @@ export const categorizedSkills = {
     { name: 'Git', icon: '/assets/skills/git.png' },
     { name: 'Jira', icon: '/assets/skills/jira.png' },
     { name: 'Figma', icon: '/assets/skills/figma.png' },
+    { name: 'Postman', icon: '/assets/skills/postman.png' },
   ],
 };
