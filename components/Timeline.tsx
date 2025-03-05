@@ -4,9 +4,16 @@ const experiences = [
   {
     year: '2021-2025',
     title: 'Software Engineering Student',
-    company: 'Sami shamoon Colleg',
+    company: 'Sami Shamoon College',
     description:
       "Pursuing a Bachelor's degree in Software Engineering, gaining expertise in algorithms, data structures, and software development principles.",
+  },
+  {
+    year: '2025 - Present',
+    title: 'Full-Stack Flutter & Node.js Course',
+    company: 'Udemy',
+    description:
+      'Currently enrolled in a hands-on course covering Flutter, Node.js, Express.js, and MongoDB, focusing on building full-stack applications with modern technologies.',
   },
   {
     year: '2018',
