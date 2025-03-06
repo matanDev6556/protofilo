@@ -16,12 +16,12 @@ export const categorizedSkills = {
   Backend: [
     { name: 'Node.js', icon: '/assets/skills/nodejs.png' },
     { name: 'Express.js', icon: '/assets/skills/expressjs.png' },
+    { name: 'Firebase', icon: '/assets/skills/firebase.PNG' },
   ],
 
   Databases: [
     { name: 'MySQL', icon: '/assets/skills/mysql.png' },
     { name: 'MongoDB', icon: '/assets/skills/mongo-db.png' },
-    { name: 'Firestore', icon: '/assets/skills/firebase.PNG' },
   ],
 
   Tools: [
