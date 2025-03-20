@@ -48,7 +48,7 @@ export default function Portfolio() {
                 className="bg-[#FFD700] text-black hover:bg-[#FFD700]/90"
                 asChild
               >
-                <a href="/Matan-Kalifa-CV.pdf" download="Matan-Kalifa-CV.pdf">
+                <a href="/Matan resume.pdf" download="Matan resume.pdf">
                   Download CV
                 </a>
               </Button>
