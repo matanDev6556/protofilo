@@ -47,6 +47,40 @@ export const projects: Project[] = [
     features: ['Auth', 'Bloc and Cubit', 'MVC', 'SOLID'],
   },
   {
+    id: 'BuyMe',
+    title: 'BuyMe',
+    category: 'Mobile App',
+    images: [
+      '/assets/e-commernce mockup/1.png',
+      '/assets/e-commernce mockup/2.png',
+      '/assets/e-commernce mockup/3.png',
+      '/assets/e-commernce mockup/4.png',
+      '/assets/e-commernce mockup/5.png',
+      '/assets/e-commernce mockup/6.png',
+      '/assets/e-commernce mockup/7.png',
+     
+    ],
+    description:
+      "This project is a Flutter-based frontend for an e-commerce application, designed to provide a seamless shopping experience for users. The app allows users to browse products, add items to their cart, manage their cart (including selecting items for checkout), and proceed to a secure payment process. The project follows modern software architecture principles, leveraging Flutter's widget-based UI and the Riverpod state management library for efficient and scalable state handling.",
+    skills: [
+      'Dart',
+      'JavaScript',
+      'Flutter',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Git',
+      'Postman',
+    ],
+    features: [
+      'Authicitaion',
+      'Autiriaztion',
+      'Riverpod_anotation',
+      'Clean Architecture',
+      'SOLID',
+    ],
+  },
+  {
     id: 'foundly',
     title: 'Foundly',
     category: 'Web App',
