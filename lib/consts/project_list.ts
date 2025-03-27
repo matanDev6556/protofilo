@@ -58,7 +58,6 @@ export const projects: Project[] = [
       '/assets/e-commernce mockup/5.png',
       '/assets/e-commernce mockup/6.png',
       '/assets/e-commernce mockup/7.png',
-     
     ],
     description:
       "This project is a Flutter-based frontend for an e-commerce application, designed to provide a seamless shopping experience for users. The app allows users to browse products, add items to their cart, manage their cart (including selecting items for checkout), and proceed to a secure payment process. The project follows modern software architecture principles, leveraging Flutter's widget-based UI and the Riverpod state management library for efficient and scalable state handling.",
@@ -76,6 +75,7 @@ export const projects: Project[] = [
       'Authicitaion',
       'Autiriaztion',
       'Riverpod_anotation',
+      'Stripe',
       'Clean Architecture',
       'SOLID',
     ],
