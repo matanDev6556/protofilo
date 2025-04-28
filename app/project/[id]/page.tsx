@@ -1,9 +1,7 @@
 'use client';
 import ProjectGallery from '@/components/ProjectGallery';
-
 import Skills from '@/components/SkillGrid';
 import { projects } from '@/lib/consts/project_list';
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { FaGithub, FaLock } from 'react-icons/fa';
 
@@ -37,13 +35,22 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
           {/* Project Header */}
           <div className="flex flex-col md:flex-row items-start gap-4 mb-12">
-            <div className="w-full md:w-1/4 relative h-[150px] md:h-[200px]">
-              <Image
-                src={project.images[0] || '/placeholder.svg'}
-                alt={project.title}
-                fill
-                className="object-contain rounded-lg"
-              />
+            <div className="w-full md:w-1/4 mb-4 md:mb-0">
+              <div
+                className="w-full rounded-xl overflow-hidden shadow-lg"
+                style={{
+                  borderRadius: '15px',
+                  aspectRatio: '3/2',
+                  position: 'relative',
+                }}
+              >
+                <img
+                  src={project.images[0] || '/placeholder.svg'}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                  style={{ borderRadius: '15px' }}
+                />
+              </div>
             </div>
             <div className="w-full md:w-3/4 flex flex-col items-center md:items-start">
               <h1 className="text-4xl font-bold">{project.title}</h1>
@@ -92,15 +99,15 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         {/* Skills and Features Section */}
         <div className="md:flex md:gap-8 mb-12">
           {/* Skills Used */}
-          <div className="mb-12 md:mb-0 md:w-1/2">
+          <div className="mb-12 md:mb-0 md:w-2/3">
             <h2 className="text-2xl font-bold mb-6 text-center">Skills Used</h2>
             <div className="bg-[#222222] rounded-lg p-8 h-full">
-              <Skills filter={project.skills} />
+              <Skills filter={project.skills} compact={true} />
             </div>
           </div>
 
           {/* Key Features */}
-          <div className="md:w-1/2">
+          <div className="md:w-1/3">
             <h2 className="text-2xl font-bold mb-6 text-center">
               Key Features
             </h2>
