@@ -3,11 +3,18 @@ import { categorizedSkills } from '@/lib/consts/skills_list';
 
 interface SkillsProps {
   filter?: string[];
+  compact?: boolean;
 }
 
-export default function Skills({ filter }: SkillsProps) {
+export default function Skills({ filter, compact = false }: SkillsProps) {
+  const isProjectPage = !!filter;
+
   return (
-    <div className="flex flex-wrap gap-4">
+    <div
+      className={
+        isProjectPage ? 'grid grid-cols-2 gap-4' : 'flex flex-wrap gap-4'
+      }
+    >
       {Object.entries(categorizedSkills).map(([category, skills]) => {
         const filteredSkills = filter
           ? skills.filter((skill) => filter.includes(skill.name))
@@ -16,7 +23,10 @@ export default function Skills({ filter }: SkillsProps) {
         if (filteredSkills.length === 0) return null;
 
         return (
-          <div key={category} className="min-w-[200px] flex-1">
+          <div
+            key={category}
+            className={isProjectPage ? 'min-w-[150px]' : 'min-w-[200px] flex-1'}
+          >
             <h3 className="text-xl text-[#D1B729] mb-4 text-start">
               {category}
             </h3>
