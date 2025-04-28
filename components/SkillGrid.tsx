@@ -7,7 +7,7 @@ interface SkillsProps {
 
 export default function Skills({ filter }: SkillsProps) {
   return (
-    <div className="space-y-8">
+    <div className="flex flex-wrap gap-4">
       {Object.entries(categorizedSkills).map(([category, skills]) => {
         const filteredSkills = filter
           ? skills.filter((skill) => filter.includes(skill.name))
@@ -16,9 +16,11 @@ export default function Skills({ filter }: SkillsProps) {
         if (filteredSkills.length === 0) return null;
 
         return (
-          <div key={category}>
-            <h3 className="text-xl text-[#D1B729] mb-4">{category}</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+          <div key={category} className="min-w-[200px] flex-1">
+            <h3 className="text-xl text-[#D1B729] mb-4 text-start">
+              {category}
+            </h3>
+            <div className="flex flex-wrap gap-3 justify-start">
               {filteredSkills.map((skill) => (
                 <div
                   key={skill.name}

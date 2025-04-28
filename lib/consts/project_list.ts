@@ -6,6 +6,11 @@ interface Project {
   description: string;
   skills: string[];
   features: string[];
+  github?: {
+    isPublic: boolean;
+    url?: string;
+  };
+  color: string;
 }
 
 export const projects: Project[] = [
@@ -29,6 +34,10 @@ export const projects: Project[] = [
       'A comprehensive training management application has been developed for both trainers and trainees',
     skills: ['Dart', 'Flutter', 'Firebase', 'Git', 'Figma'],
     features: ['Auth', 'GetX', 'Clean Architecture', 'SOLID'],
+    github: {
+      isPublic: false,
+    },
+    color: '#FFA500',
   },
   {
     id: 'tindog',
@@ -45,6 +54,10 @@ export const projects: Project[] = [
     description: 'A dating app for dog owners',
     skills: ['Dart', 'Flutter', 'Firebase', 'Git'],
     features: ['Auth', 'Bloc and Cubit', 'MVC', 'SOLID'],
+    github: {
+      isPublic: false,
+    },
+    color: '#9B30FF',
   },
   {
     id: 'BuyMe',
@@ -79,6 +92,11 @@ export const projects: Project[] = [
       'Clean Architecture',
       'SOLID',
     ],
+    github: {
+      isPublic: true,
+      url: 'https://github.com/matanDev6556/E-commerce---Frontend',
+    },
+    color: '#2196F3',
   },
   {
     id: 'foundly',
@@ -94,6 +112,11 @@ export const projects: Project[] = [
     description: 'An investment platform for both businesses and individuals.',
     skills: ['React', 'Css', 'Firebase', 'Git', 'Figma'],
     features: ['Auth', 'Context API', 'SOLID'],
+    github: {
+      isPublic: true,
+      url: 'https://github.com/matanDev6556/Foundly',
+    },
+    color: '#00BFFF',
   },
   {
     id: 'legal-ai',
@@ -109,5 +132,10 @@ export const projects: Project[] = [
       'A smart AI-powered platform that helps individuals and businesses navigate legal matters. The system provides automated legal document generation, guidance on various legal topics, and ensures compliance, making legal assistance more accessible and efficient.',
     skills: ['React', 'Js'],
     features: ['Gemini Api', 'NextJs', 'SOLID'],
+    github: {
+      isPublic: true,
+      url: 'https://github.com/matanDev6556/smartLawyer',
+    },
+    color: '#808080',
   },
 ];
