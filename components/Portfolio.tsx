@@ -8,27 +8,20 @@ import Timeline from './Timeline';
 import TextAnimation from './TextAnimation';
 
 export default function Portfolio() {
-  return (
-    <div className="container mx-auto px-4 py-8">
-      <nav className="flex justify-between items-center mb-12">
-        <div className="text-[#FFD700] text-3xl font-bold">MK</div>
-        <div className="flex gap-8 text-gray-300">
-          <a href="#about" className="hover:text-[#FFD700]">
-            About
-          </a>
-          <a href="#portfolio" className="hover:text-[#FFD700]">
-            Portfolio
-          </a>
-          <a href="#education" className="hover:text-[#FFD700]">
-            Education
-          </a>
-        </div>
-      </nav>
+  // צבע הגרדיאנט - כתום
+  const gradientColor = '#FFA500';
 
-      <div className="grid lg:grid-cols-2 gap-12">
-        {/* Left Column */}
-        <div className="space-y-12">
-          <section className="relative">
+  return (
+    <div className="min-h-screen bg-[#1A1A1A]">
+      {/* חלק עליון עם גרדיאנט */}
+      <div
+        className="w-full py-16 relative"
+        style={{
+          background: `linear-gradient(180deg, ${gradientColor}20 0%, ${gradientColor}10 30%, ${gradientColor}05 60%, rgba(26, 26, 26, 1) 100%)`,
+        }}
+      >
+        <div className="container mx-auto px-4">
+          <section className="relative pb-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -80,34 +73,42 @@ export default function Portfolio() {
               </a>
             </div>
           </section>
-
-          <section id="about" className="space-y-6">
-            <h2 className="text-3xl font-bold">About</h2>
-            <p className="text-gray-400 leading-relaxed text-lg">
-              I am a dedicated fourth-year Software Engineering student with an
-              average score of 86. <br />I excel in teamwork, adapt well in
-              dynamic environments, and am a passionate full-stack developer
-              focused on continuous self-improvement and integrating new
-              technologies into my skills.
-            </p>
-          </section>
-
-          <section className="space-y-6">
-            <h2 className="text-3xl font-bold">My Skills</h2>
-            <Skills />
-          </section>
         </div>
+      </div>
 
-        {/* Right Column */}
-        <div className="space-y-12">
-          <section id="portfolio">
-            <ProjectGrid />
-          </section>
+      {/* תוכן נוסף */}
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Left Column */}
+          <div className="space-y-12">
+            <section id="about" className="space-y-6">
+              <h2 className="text-3xl font-bold">About</h2>
+              <p className="text-gray-400 leading-relaxed text-lg">
+                I am a dedicated fourth-year Software Engineering student with
+                an average score of 86. <br />I excel in teamwork, adapt well in
+                dynamic environments, and am a passionate full-stack developer
+                focused on continuous self-improvement and integrating new
+                technologies into my skills.
+              </p>
+            </section>
 
-          <section id="education" className="space-y-6">
-            <h2 className="text-3xl font-bold">Education</h2>
-            <Timeline />
-          </section>
+            <section className="space-y-6">
+              <h2 className="text-3xl font-bold">My Skills</h2>
+              <Skills />
+            </section>
+          </div>
+
+          {/* Right Column */}
+          <div className="space-y-12">
+            <section id="portfolio">
+              <ProjectGrid />
+            </section>
+
+            <section id="education" className="space-y-6">
+              <h2 className="text-3xl font-bold">Education</h2>
+              <Timeline />
+            </section>
+          </div>
         </div>
       </div>
     </div>
