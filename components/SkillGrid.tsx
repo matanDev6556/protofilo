@@ -6,9 +6,7 @@ interface SkillsProps {
   compact?: boolean;
 }
 
-export default function Skills({ filter, compact = false }: SkillsProps) {
-  const isProjectPage = !!filter;
-
+export default function Skills({ filter }: SkillsProps) {
   return (
     <div className="flex flex-col gap-8 w-full">
       {Object.entries(categorizedSkills).map(([category, skills]) => {
