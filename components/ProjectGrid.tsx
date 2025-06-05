@@ -25,9 +25,9 @@ export default function ProjectGrid() {
                   src={project.images[0] || '/placeholder.svg'}
                   alt={project.title}
                   layout="responsive"
-                  width={400}
-                  height={300}
-                  className="w-full h-[200px] object-cover transition-transform duration-300 group-hover:scale-110 group-hover:filter group-hover:filter-brightness-90"
+                  width={150}
+                  height={150}
+                  className="w-full h-[150px] object-cover transition-transform duration-300 group-hover:scale-110 group-hover:filter group-hover:filter-brightness-90"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-center">

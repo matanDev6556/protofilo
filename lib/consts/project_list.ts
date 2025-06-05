@@ -11,6 +11,7 @@ interface Project {
     url?: string;
   };
   color: string;
+  websiteUrl?: string;
 }
 
 export const projects: Project[] = [
@@ -38,6 +39,52 @@ export const projects: Project[] = [
       isPublic: false,
     },
     color: '#FFA500',
+  },
+  {
+    id: 'GMK-Tec',
+    title: 'GMK-Tec',
+    category: 'Web App',
+    images: [
+      '/assets/GMtec/GMTec.png',
+      '/assets/GMtec/1.png',
+      '/assets/GMtec/2.png',
+      '/assets/GMtec/3.png',
+      '/assets/GMtec/4.png',
+      '/assets/GMtec/5.png',
+      '/assets/GMtec/6.png',
+      '/assets/GMtec/7.png',
+    ],
+    description:
+      'Developed a promotional website for Electis in collaboration with GMK-Tec, featuring a product showcase, warranty verification system, and a fully functional admin panel. The admin panel enables complete site management, including product editing, file uploads, and visual customization. To optimize performance, all uploaded media (PDFs, images) are automatically converted to WebP. Static content is served efficiently from the server, as the site maintains a focused, lightweight structure.',
+    skills: [
+      'TypeScript',
+      'React',
+      'Node.js',
+      'Express.js',
+      'MySQL',
+      'Git',
+      'Figma',
+      'Jira',
+    ],
+    features: [
+      'Vite for performance',
+      'Auth',
+      'React Context',
+      'Filter - Sort - Search',
+      'Full Admin Panel',
+      'Version Management - View another version and restore or publish new contect to production',
+      'Email Verification/Sending',
+      'Static Site Generation',
+      'Responsive Design For All Devices',
+      'Animations',
+      'SEO Optimization',
+      'SOLID',
+    ],
+    github: {
+      isPublic: false,
+    },
+    color: '#82CE5B',
+    websiteUrl: 'https://gmktec.co.il',
   },
   {
     id: 'tindog',

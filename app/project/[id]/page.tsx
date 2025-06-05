@@ -3,7 +3,7 @@ import ProjectGallery from '@/components/ProjectGallery';
 import Skills from '@/components/SkillGrid';
 import { projects } from '@/lib/consts/project_list';
 import { notFound } from 'next/navigation';
-import { FaGithub, FaLock } from 'react-icons/fa';
+import { FaGithub, FaLock, FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function ProjectPage({ params }: { params: { id: string } }) {
   const project = projects.find((p) => p.id === params.id);
@@ -58,11 +58,35 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                 {project.description}
               </p>
 
-              {/* GitHub Button */}
-              {project.github &&
-                (project.github.isPublic ? (
+              <div className="flex flex-col md:flex-row gap-4">
+                {project.github &&
+                  (project.github.isPublic ? (
+                    <a
+                      href={project.github.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-[#333] hover:bg-[#444] text-white px-5 py-2.5 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 border border-gray-700"
+                      style={{
+                        backgroundColor: `${projectColor}30`,
+                        borderColor: projectColor,
+                      }}
+                    >
+                      <FaGithub className="text-white" size={20} />
+                      <span>View on GitHub</span>
+                    </a>
+                  ) : (
+                    <button
+                      disabled
+                      className="inline-flex items-center gap-2 bg-[#2A2A2A] text-gray-400 cursor-not-allowed px-5 py-2.5 rounded-lg opacity-70 border border-gray-700"
+                    >
+                      <FaLock className="text-gray-400" size={18} />
+                      <span>Private Repository</span>
+                    </button>
+                  ))}
+
+                {project.websiteUrl && (
                   <a
-                    href={project.github.url}
+                    href={project.websiteUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-[#333] hover:bg-[#444] text-white px-5 py-2.5 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 border border-gray-700"
@@ -71,18 +95,11 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                       borderColor: projectColor,
                     }}
                   >
-                    <FaGithub className="text-white" size={20} />
-                    <span>View on GitHub</span>
+                    <FaExternalLinkAlt className="text-white" size={18} />
+                    <span>Visit Website</span>
                   </a>
-                ) : (
-                  <button
-                    disabled
-                    className="inline-flex items-center gap-2 bg-[#2A2A2A] text-gray-400 cursor-not-allowed px-5 py-2.5 rounded-lg opacity-70 border border-gray-700"
-                  >
-                    <FaLock className="text-gray-400" size={18} />
-                    <span>Private Repository</span>
-                  </button>
-                ))}
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -97,17 +114,15 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         </div>
 
         {/* Skills and Features Section */}
-        <div className="md:flex md:gap-8 mb-12">
-          {/* Skills Used */}
-          <div className="mb-12 md:mb-0 md:w-2/3">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
             <h2 className="text-2xl font-bold mb-6 text-center">Skills Used</h2>
             <div className="bg-[#222222] rounded-lg p-8 h-full">
               <Skills filter={project.skills} compact={true} />
             </div>
           </div>
 
-          {/* Key Features */}
-          <div className="md:w-1/3">
+          <div>
             <h2 className="text-2xl font-bold mb-6 text-center">
               Key Features
             </h2>
