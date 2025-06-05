@@ -15,13 +15,13 @@ export default function Portfolio() {
     <div className="min-h-screen bg-[#1A1A1A]">
       {/* חלק עליון עם גרדיאנט */}
       <div
-        className="w-full py-16 relative"
+        className="w-full py-8"
         style={{
           background: `linear-gradient(180deg, ${gradientColor}20 0%, ${gradientColor}10 30%, ${gradientColor}05 60%, rgba(26, 26, 26, 1) 100%)`,
         }}
       >
         <div className="container mx-auto px-4">
-          <section className="relative pb-8">
+          <section className="relative pb-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ export default function Portfolio() {
                   <TextAnimation text="Matan Kalifa" delay={0} speed={0.1} />
                 </span>
               </h1>
-              <h2 className="text-2xl text-gray-400 mb-6">
+              <h2 className="text-2xl text-gray-400 mb-4">
                 Full Stack Developer
               </h2>
               <Button
@@ -77,11 +77,11 @@ export default function Portfolio() {
       </div>
 
       {/* תוכן נוסף */}
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 pt-2">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left Column */}
-          <div className="space-y-12">
-            <section id="about" className="space-y-6">
+          <div className="space-y-8">
+            <section id="about" className="space-y-4">
               <h2 className="text-3xl font-bold">About</h2>
               <p className="text-gray-400 leading-relaxed text-lg">
                 I am a dedicated fourth-year Software Engineering student with
