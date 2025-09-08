@@ -84,11 +84,11 @@ export default function Portfolio() {
             <section id="about" className="space-y-4">
               <h2 className="text-3xl font-bold">About</h2>
               <p className="text-gray-400 leading-relaxed text-lg">
-                I am a dedicated fourth-year Software Engineering student with
-                an average score of 86. <br />I excel in teamwork, adapt well in
-                dynamic environments, and am a passionate full-stack developer
-                focused on continuous self-improvement and integrating new
-                technologies into my skills.
+                I am a dedicated Software Engineer.
+                <br /> I excel in teamwork, adapt well in dynamic environments,
+                and am a passionate full-stack developer focused on continuous
+                self-improvement and integrating new technologies into my
+                skills.
               </p>
             </section>
 
