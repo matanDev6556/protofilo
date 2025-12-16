@@ -1,0 +1,47 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2A2A2A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#grad2)"/>
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#4A90E2" text-anchor="middle">System Architecture</text>
+  
+  <!-- Redis Cache -->
+  <rect x="50" y="150" width="150" height="100" fill="#DC382D" rx="10"/>
+  <text x="125" y="200" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">Redis</text>
+  <text x="125" y="225" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Cache Layer</text>
+  
+  <!-- API Server -->
+  <rect x="325" y="150" width="150" height="100" fill="#4A90E2" rx="10"/>
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">API Server</text>
+  <text x="400" y="225" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Node.js</text>
+  
+  <!-- Database -->
+  <rect x="600" y="150" width="150" height="100" fill="#00758F" rx="10"/>
+  <text x="675" y="200" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">MySQL</text>
+  <text x="675" y="225" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Database</text>
+  
+  <!-- Queue System -->
+  <rect x="187" y="350" width="150" height="100" fill="#FFA500" rx="10"/>
+  <text x="262" y="400" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">Queue</text>
+  <text x="262" y="425" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Management</text>
+  
+  <!-- Provider -->
+  <rect x="462" y="350" width="150" height="100" fill="#9B30FF" rx="10"/>
+  <text x="537" y="400" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">Provider</text>
+  <text x="537" y="425" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Pattern</text>
+  
+  <!-- Arrows -->
+  <path d="M 200 200 L 325 200" stroke="#4A90E2" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 475 200 L 600 200" stroke="#4A90E2" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 262 350 L 262 250" stroke="#4A90E2" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 537 350 L 537 250" stroke="#4A90E2" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#4A90E2"/>
+    </marker>
+  </defs>
+</svg>

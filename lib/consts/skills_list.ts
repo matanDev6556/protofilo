@@ -22,6 +22,7 @@ export const categorizedSkills = {
   Databases: [
     { name: 'MySQL', icon: '/assets/skills/mysql.png' },
     { name: 'MongoDB', icon: '/assets/skills/mongo-db.png' },
+    { name: 'Redis', icon: '/assets/skills/redis.png' },
   ],
 
   Tools: [

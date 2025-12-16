@@ -104,8 +104,8 @@ export default function Portfolio() {
               <ProjectGrid />
             </section>
 
-            <section id="education" className="space-y-6">
-              <h2 className="text-3xl font-bold">Education</h2>
+            <section id="experience" className="space-y-6">
+              <h2 className="text-3xl font-bold">Experience</h2>
               <Timeline />
             </section>
           </div>
