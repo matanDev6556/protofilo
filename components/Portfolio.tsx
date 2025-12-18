@@ -1,15 +1,15 @@
-'use client';
-import { motion } from 'framer-motion';
-import { Github, Mail, Linkedin, Phone } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import ProjectGrid from './ProjectGrid';
-import Skills from './SkillGrid';
-import Timeline from './Timeline';
-import TextAnimation from './TextAnimation';
+"use client";
+import { motion } from "framer-motion";
+import { Github, Mail, Linkedin, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import ProjectGrid from "./ProjectGrid";
+import Skills from "./SkillGrid";
+import Timeline from "./Timeline";
+import TextAnimation from "./TextAnimation";
 
 export default function Portfolio() {
   // צבע הגרדיאנט - כתום
-  const gradientColor = '#FFA500';
+  const gradientColor = "#FFA500";
 
   return (
     <div className="min-h-screen bg-[#1A1A1A]">
@@ -30,7 +30,7 @@ export default function Portfolio() {
               <h1 className="text-5xl font-bold mb-4">
                 <TextAnimation text="I'm" delay={0} speed={0.1} />
                 <span className="text-[#FFD700]">
-                  {' '}
+                  {" "}
                   <TextAnimation text="Matan Kalifa" delay={0} speed={0.1} />
                 </span>
               </h1>
@@ -105,7 +105,7 @@ export default function Portfolio() {
             </section>
 
             <section id="experience" className="space-y-6">
-              <h2 className="text-3xl font-bold">Experience</h2>
+              <h2 className="text-3xl font-bold"></h2>
               <Timeline />
             </section>
           </div>

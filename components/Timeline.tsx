@@ -12,7 +12,7 @@ interface Experience {
 
 const workExperiences: Experience[] = [
   {
-    year: "2024-2025",
+    year: "2025-Present",
     title: "Full Stack Developer",
     company: "Electis",
     type: "work",
