@@ -6,6 +6,7 @@ interface Experience {
   company: string;
   description: string;
   certificate?: string;
+  link?: string;
   type: "work" | "education";
   achievements?: string[];
 }
@@ -36,6 +37,7 @@ const educationExperiences: Experience[] = [
     type: "education",
     description:
       "Pursuing a Bachelor's degree in Software Engineering, gaining expertise in algorithms, data structures, and software development principles.",
+    link: "https://claude.ai/public/artifacts/3a98a8c5-5110-4e02-b2c1-09dce7735368#no_universal_links",
   },
   {
     year: "2025",
@@ -115,15 +117,27 @@ export default function Timeline() {
               <div className="text-gray-400 mb-2">{exp.company}</div>
               <p className="text-gray-500">{exp.description}</p>
 
-              {exp.certificate && (
-                <div className="mt-5 text-center">
-                  <a
-                    href={exp.certificate}
-                    download
-                    className="px-4 py-2 bg-[#FFD760] text-black rounded-lg hover:bg-yellow-500 transition"
-                  >
-                    Certificate
-                  </a>
+              {(exp.certificate || exp.link) && (
+                <div className="mt-5 flex gap-3 justify-center">
+                  {exp.certificate && (
+                    <a
+                      href={exp.certificate}
+                      download
+                      className="px-4 py-2 bg-[#FFD760] text-black rounded-lg hover:bg-yellow-500 transition"
+                    >
+                      Certificate
+                    </a>
+                  )}
+                  {exp.link && (
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-[#FFD760] text-black rounded-lg hover:bg-yellow-500 transition"
+                    >
+                      View Details
+                    </a>
+                  )}
                 </div>
               )}
             </motion.div>
