@@ -11,7 +11,7 @@ export default function Portfolio() {
   const gradientColor = "#FFA500";
 
   return (
-    <div className="min-h-screen bg-[#1A1A1A]">
+    <div className="min-h-screen bg-[#1A1A1A] w-full overflow-x-hidden">
       {/* חלק עליון עם גרדיאנט */}
       <div
         className="w-full py-8"
@@ -19,14 +19,14 @@ export default function Portfolio() {
           background: `linear-gradient(180deg, ${gradientColor}20 0%, ${gradientColor}10 30%, ${gradientColor}05 60%, rgba(26, 26, 26, 1) 100%)`,
         }}
       >
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-6 md:px-8">
           <section className="relative pb-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-5xl font-bold mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
                 <TextAnimation text="I'm" delay={0} speed={0.1} />
                 <span className="text-[#FFD700]">
                   {" "}
@@ -76,7 +76,7 @@ export default function Portfolio() {
       </div>
 
       {/* תוכן נוסף */}
-      <div className="container mx-auto px-4 pt-2">
+      <div className="container mx-auto px-6 md:px-8 pt-2">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left Column */}
           <div className="space-y-8">
