@@ -33,7 +33,8 @@ export const projects: Project[] = [
       "Node.js",
       "Express.js",
       "Redis",
-      "MySQL",
+      "PostgreSQL",
+      "Docker",
       "Git",
       "Jira",
     ],
@@ -138,7 +139,7 @@ export const projects: Project[] = [
       "/assets/tindog/5.png",
     ],
     description: "A dating app for dog owners",
-    skills: ["Dart", "Flutter", "Firebase", "Git"],
+    skills: ["Dart", "Flutter", "Firebase", "Redis", "Docker", "Git"],
     features: ["Auth", "Bloc and Cubit", "MVC", "SOLID"],
     github: {
       isPublic: false,

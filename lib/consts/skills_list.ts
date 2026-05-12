@@ -23,10 +23,12 @@ export const categorizedSkills = {
     { name: 'MySQL', icon: '/assets/skills/mysql.png' },
     { name: 'MongoDB', icon: '/assets/skills/mongo-db.png' },
     { name: 'Redis', icon: '/assets/skills/redis.png' },
+    { name: 'PostgreSQL', icon: '/assets/skills/postgress.png' },
   ],
 
   Tools: [
     { name: 'Git', icon: '/assets/skills/git.png' },
+    { name: 'Docker', icon: '/assets/skills/docker.png' },
     { name: 'Jira', icon: '/assets/skills/jira.png' },
     { name: 'Figma', icon: '/assets/skills/figma.png' },
     { name: 'Postman', icon: '/assets/skills/postman.png' },

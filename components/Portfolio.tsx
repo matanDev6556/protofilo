@@ -4,7 +4,6 @@ import { Github, Mail, Linkedin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ProjectGrid from "./ProjectGrid";
 import Skills from "./SkillGrid";
-import Timeline from "./Timeline";
 import TextAnimation from "./TextAnimation";
 
 export default function Portfolio() {
@@ -104,10 +103,6 @@ export default function Portfolio() {
               <ProjectGrid />
             </section>
 
-            <section id="experience" className="space-y-6">
-              <h2 className="text-3xl font-bold"></h2>
-              <Timeline />
-            </section>
           </div>
         </div>
       </div>
