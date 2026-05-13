@@ -146,6 +146,7 @@ export const projects: Project[] = [
       isPublic: false,
     },
     color: "#9B30FF",
+    websiteUrl: "https://tindogapplandingpage.netlify.app/",
   },
   {
     id: "BuyMe",
