@@ -21,7 +21,7 @@ export default function Skills({ filter }: SkillsProps) {
             <h3 className="text-xl text-[#D1B729] mb-4 text-start">
               {category}
             </h3>
-            <div className="flex overflow-x-auto pb-4 gap-3 hide-scrollbar">
+            <div className="flex flex-wrap gap-3">
               {filteredSkills.map((skill) => (
                 <div
                   key={skill.name}

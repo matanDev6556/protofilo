@@ -10,7 +10,7 @@ export default function ProjectGrid() {
       <div className="flex justify-between items-center">
         <h2 className="text-3xl font-bold">Portfolio</h2>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
